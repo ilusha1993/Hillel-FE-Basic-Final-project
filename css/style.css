@@ -1,3 +1,36 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.title-bloc {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.title-bloc .title-link {
+  width: fit-content;
+  text-decoration: none;
+  font-size: 14px;
+  color: #24A3FF;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.title-bloc .title-link-::after {
+  content: "";
+  background-image: url(../images/Arrow-right.svg) no-repeat;
+  width: 12px;
+  height: 12px;
+}
 
 /*# sourceMappingURL=style.css.map */
