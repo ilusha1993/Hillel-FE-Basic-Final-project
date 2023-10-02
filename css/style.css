@@ -7,13 +7,38 @@ body {
 }
 
 .services {
-  background: var(--gradient-supersoft, linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%));
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  border-radius: 0px 0px 12px 12px;
+  background: var(--gradient-supersoft, linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%)) no-repeat;
 }
-.services .wrapper {
+.services::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: -10px;
+  height: 10px;
+  border-radius: 0px 0px 12px 12px;
+  background: #CACADB;
+}
+.services::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: -20px;
+  height: 10px;
+  border-radius: 0px 0px 12px 12px;
+  background: #E7E7F2;
+}
+
+.wrapper {
   padding-left: 30px;
   padding-right: 30px;
 }
-.services .wrapper .services-bloc {
+.wrapper .services-bloc {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
