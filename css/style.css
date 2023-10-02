@@ -8,7 +8,6 @@ body {
 
 .services {
   position: relative;
-  padding-top: 30px;
   padding-bottom: 60px;
   border-radius: 0px 0px 12px 12px;
   background: var(--gradient-supersoft, linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%)) no-repeat;
@@ -41,7 +40,7 @@ body {
 .wrapper .services-bloc {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 60px;
 }
 
 .title-bloc {
@@ -64,7 +63,7 @@ body {
 .title-bloc .title-link::after {
   content: "";
   margin: 0;
-  background: url("../images/Arrow-right.svg");
+  background: url(../images/Arrow-right.svg);
   background-position: center;
   width: 12px;
   height: 12px;
@@ -91,6 +90,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  width: 100%;
 }
 .service-item-image {
   width: fit-content;
@@ -124,6 +124,43 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .wrapper .services-bloc {
+    row-gap: 60px;
+  }
+  .services-menu {
+    row-gap: 60px;
+    column-gap: 60px;
+  }
+  .services-menu .service-item {
+    width: calc(50% - 30px);
+  }
+  .title-bloc .title-text {
+    font-size: 38px;
+  }
+}
+@media (min-width: 1024px) {
+  .services-menu .service-item {
+    width: calc(33.33% - 40px);
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+  .wrapper .title-link {
+    color: var(--Accent, #F0145A);
+  }
+  .wrapper .title-link::after {
+    background: url(../images/Arrow2.svg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
