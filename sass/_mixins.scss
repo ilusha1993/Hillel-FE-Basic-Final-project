@@ -1,0 +1,26 @@
+//icon Arrow after link
+@mixin iconArrow($url, $wIcon, $hIcon) {
+    content: '';
+    margin: 0;
+    background: url("#{$url}");
+    background-position: center;
+    width: $wIcon;
+    height: $hIcon;
+};
+
+
+@mixin iconService {
+    &-image{
+        width: fit-content;
+        padding: 14px;
+        font-size: 0;
+        display: inline-block;
+        border-radius: 24px;
+        background: var(--basic-white, #FFF);
+
+        img{
+            width: 64px;
+            height: 64px;
+        }
+    }
+}

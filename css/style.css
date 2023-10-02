@@ -6,16 +6,14 @@ body {
   font-family: "Montserrat", Arial, sans-serif;
 }
 
-.wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 .services {
   background: var(--gradient-supersoft, linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%));
 }
-
-.services-bloc {
+.services .wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.services .wrapper .services-bloc {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -41,7 +39,7 @@ body {
 .title-bloc .title-link::after {
   content: "";
   margin: 0;
-  background: url(../images/Arrow-right.svg) no-repeat;
+  background: url("../images/Arrow-right.svg");
   background-position: center;
   width: 12px;
   height: 12px;
@@ -56,6 +54,12 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.services-menu {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
 }
 
 .service-item {
