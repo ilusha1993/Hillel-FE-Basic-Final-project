@@ -1,0 +1,195 @@
+.wrapper-partners{
+    margin: 0;
+}
+
+.partners-bloc{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+    h3{
+        color: #323264;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
+
+.partners-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 0;
+
+    a{
+        display: inline-block;
+        height: 120px;
+        width: 100%;
+        position: relative;
+
+        &:nth-child(n+7){
+            display: none;
+        }
+    }
+
+    .p-hillel{
+        background: #1C4280;
+
+        img{
+            width: 217px;
+            height: 48px;
+            @include mixins.imageCenter;
+        }
+    }
+
+    .p-wanna-biz{
+        background: #143646;
+
+        img{
+            width: 199px;
+            height: 32px;
+            @include mixins.imageCenter;
+        }
+    }
+
+    .p-tapgerine{
+        background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
+
+        img{
+            width: 179px;
+            height: 44px;
+            @include mixins.imageCenter;
+        }
+    }
+
+    .p-3dlook{
+        background: #9E4DC3;
+
+        img{
+            width: 180px;
+            height: 42px;
+            @include mixins.imageCenter;
+        }
+    }
+
+    .p-orangear{
+        background: #FD9339;
+
+        img{
+            width: 174px;
+            height: 44px;
+            @include mixins.imageCenter;
+        }
+    }
+
+    .p-adtelligent{
+        background: #E2E2E4;
+
+        img{
+            width: 194.792px;
+            height: 48px;
+            @include mixins.imageCenter;
+        }
+    }
+
+    .p-clickky{
+        background: #C71C36;
+
+        img{
+            width: 138px;
+            height: 61px;
+            @include mixins.imageCenter;
+        }
+    }
+
+    .p-ecoleasing{
+        background: #DCF3F9;
+
+        img{
+            width: 146px;
+            height: 76px;
+            @include mixins.imageCenter;
+        }
+    }
+
+    .p-infratek{
+        background: #EAEAEA;
+
+         img{
+            width: 182px;
+            height: 60px;
+            @include mixins.imageCenter;
+         }
+    }
+
+    .p-citypark{
+        background: #282240;
+
+        img{
+            width: 181px;
+            height: 38px;
+            @include mixins.imageCenter;
+        }
+    }
+
+    .p-artPrintStudio{
+        background: #1D4568;
+
+        img{
+            width: 189px;
+            height: 46px;
+            @include mixins.imageCenter;
+        }
+    }
+
+    .p-ultimateCard{
+        background: #000;
+
+        img{
+            width: 152px;
+            height: 95px;
+            @include mixins.imageCenter;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .partners-menu{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        a{
+            width: 33.33%;
+
+            &:nth-child(n){
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .partners-menu{
+        a{
+            width: 25%;
+        }
+    }
+}
+
+@media(min-width: 1920px){
+    .wrapper-partners{
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 1720px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .partners-menu{
+            border-radius: 12px;
+            overflow: hidden;
+        }
+    }
+}
