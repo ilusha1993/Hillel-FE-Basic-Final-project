@@ -157,19 +157,21 @@
 }
 
 @media (min-width: 768px) {
-    .partners-menu{
+    .partners-menu {
         flex-direction: row;
         flex-wrap: wrap;
 
         a{
             width: 33.33%;
 
-            &:nth-child(n){
+            &:nth-child(n+7){
+                
                 display: inline-block;
             }
         }
     }
-}
+};
+
 
 @media (min-width: 1024px){
     .partners-menu{
@@ -177,7 +179,7 @@
             width: 25%;
         }
     }
-}
+};
 
 @media(min-width: 1920px){
     .wrapper-partners{

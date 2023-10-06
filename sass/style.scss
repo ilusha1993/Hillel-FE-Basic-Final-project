@@ -1,7 +1,7 @@
 @use 'mixins';
 @import '../sass/section-services';
 @import '../sass/section-partners';
-
+@import '../sass/section-team';
 
 *{
     box-sizing: border-box;
@@ -18,16 +18,3 @@ body{
     flex-direction: column;
     gap: 30px;
 }
-
-//Just some content till I do my next home task 
-.some-content{
-    height: 500px;
-    text-align: center;
-    padding: 100px 0;
-    margin: 0;
-
-    p{
-        margin: 0;
-    }
-}
-
