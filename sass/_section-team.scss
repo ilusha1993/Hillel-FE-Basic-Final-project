@@ -1,3 +1,5 @@
+@use 'mixins';
+
 .team{
     padding-top: 50px;
     padding-bottom: 60px;
@@ -77,14 +79,19 @@
 }
 
 @media (min-width: 768px){
-    .wrapper{
-        padding-left: 60px;
-        padding-right: 60px;
-    }
+    .team{
+        padding-top: 80px;
+        
+        .wrapper{
+            padding-left: 60px;
+            padding-right: 60px;
 
-    .title-text{
-        font-size: 38px;
+            .title-text{
+                font-size: 38px;
+            }
+        }
     }
+    
 }
 
 @media (min-width: 1024px){
@@ -101,11 +108,12 @@
 }
 
 @media(min-width: 1920px) {
-    .wrapper{
-        padding-left: 160px;
-        padding-right: 160px;
-        width: 1600px;
-        margin-left: auto;
-        margin-right: auto;
-    }   
+    .team{
+        .wrapper{
+            padding: 0;
+            width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+        }   
+    }
 }

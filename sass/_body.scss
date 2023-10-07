@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.homepage{
+    border-radius: 0px 0px 12px 12px;
+    background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

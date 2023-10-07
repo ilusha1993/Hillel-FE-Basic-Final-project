@@ -1,20 +1,5 @@
 @use 'mixins';
-@import '../sass/section-services';
-@import '../sass/section-partners';
-@import '../sass/section-team';
-
-*{
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Montserrat', Arial, sans-serif;
-}
-
-.homepage{
-    border-radius: 0px 0px 12px 12px;
-    background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+@use '../sass/body';
+@use '../sass/section-services';
+@use '../sass/section-partners';
+@use '../sass/section-team';
