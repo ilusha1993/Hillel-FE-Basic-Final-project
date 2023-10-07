@@ -352,6 +352,7 @@ body {
 @media (min-width: 1920px) {
   .partners .wrapper-partners {
     padding: 0;
+    padding-bottom: 60px;
     width: 1720px;
     margin-left: auto;
     margin-right: auto;
@@ -457,6 +458,87 @@ body {
     width: 1600px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+.publications {
+  background-color: #F5F5FA;
+}
+.publications .publications-bloc {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.publications .publications-bloc .publications-menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.publication-card {
+  background-color: #FFF;
+  text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
+  display: block;
+}
+.publication-card .container-pub-img {
+  font-size: 0;
+  overflow: hidden;
+}
+.publication-card .container-pub-img img {
+  width: 100%;
+  object-fit: cover;
+  background-color: #EDEDF7;
+  height: 200px;
+}
+
+.card-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.card-content .title-pub-card {
+  color: #24A3FF;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+.card-content .time-pub-card {
+  color: #B3B3BA;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.card-content hr {
+  background-color: #E6E6F0;
+  height: 4px;
+  margin: 0;
+  border: none;
+}
+.card-content .text-pub-card {
+  margin: 0;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+@media (min-width: 768px) {
+  .publications .publications-bloc .publications-menu {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .publications .publications-bloc .publications-menu .publication-card:last-child {
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 1024px) {
+  .publications .publications-bloc .publications-menu {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
