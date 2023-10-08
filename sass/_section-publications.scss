@@ -1,3 +1,7 @@
+@use 'mixins';
+@import 'maps';
+
+
 .publications{
     background-color: #F5F5FA;
 
@@ -44,14 +48,14 @@ gap: 15px;
 
     .title-pub-card{
         color: #24A3FF;
-        font-size: 16px;
+        font-size: map-get($fonts, 'title-pub-card');
         font-weight: 700;
         margin: 0;
     }
 
     .time-pub-card{
         color: #B3B3BA;
-        font-size: 12px;
+        font-size: map-get($fonts, 'time-pub-card');
         font-weight: 700;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -67,7 +71,7 @@ gap: 15px;
     .text-pub-card{
         margin: 0;
         color: #000;
-        font-size: 14px;
+        font-size: map-get($fonts, 'text-pub-card');;
         font-weight: 400;
         line-height: 22px;
     }

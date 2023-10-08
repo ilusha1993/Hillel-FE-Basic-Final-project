@@ -1,0 +1,17 @@
+@use "sass:map";
+
+$fonts: (
+    title-pub-card: 16px, //section publication - publication title    
+    time-pub-card: 12px, //section publication - publication time
+    text-pub-card: 14px, //section publication - publication text(description)
+
+    member-name: 16px, //section team - member`s name
+    member-position: 14px, //section team - member`s position
+    
+    title-link: 14px, //title part (decorated) - blue link
+    title-text: 30px, //title part (decorated) - title text
+    title-text-grand: 38px, //title part (decorated) - to change for desktop > 1920px
+
+    service-item-title: 22px, //section services - name of service
+    service-item-description: 16px, //section services - description of service
+);

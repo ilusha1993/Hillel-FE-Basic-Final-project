@@ -1,4 +1,5 @@
 @use 'mixins';
+@import 'maps';
 
 .team{
     padding-top: 50px;
@@ -44,14 +45,14 @@
     
       .member-name{
         color: #B3B3BA;
-        font-size: 16px;
+        font-size: map-get($fonts, 'member-name');
         font-weight: 700;
         margin: 0;
       }
     
       .member-position{
         color:  #B3B3BA;
-        font-size: 14px;
+        font-size: map-get($fonts, 'member-position');
         font-weight: 400;
         line-height: 22px;
         margin: 0;
@@ -87,7 +88,7 @@
             padding-right: 60px;
 
             .title-text{
-                font-size: 38px;
+                font-size: map-get($fonts, 'title-text-grand');
             }
         }
     }
