@@ -44,14 +44,14 @@
         gap: 6px;
     
       .member-name{
-        color: #B3B3BA;
+        color: map-get($font-colors, 'member-name');
         font-size: map-get($fonts, 'member-name');
         font-weight: 700;
         margin: 0;
       }
     
       .member-position{
-        color:  #B3B3BA;
+        color: map-get($font-colors, 'member-position');
         font-size: map-get($fonts, 'member-position');
         font-weight: 400;
         line-height: 22px;

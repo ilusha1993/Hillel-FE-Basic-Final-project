@@ -15,3 +15,20 @@ $fonts: (
     service-item-title: 22px, //section services - name of service
     service-item-description: 16px, //section services - description of service
 );
+
+$font-colors: (
+    service-item-title: #24A3FF, //section services - color of service`s name
+    service-item-description: #FFFFFF, //section services - color of service`s description
+    
+    title-link: #24A3FF, //title part (decorated) - blue link color
+    title-link-changed: #F0145A, //title part (decorated) - to change for desktop > 1920px
+    
+    member-name: #B3B3BA, //section team - member`s name color
+    member-position: #B3B3BA, //section team - member`s position 
+    
+    partners-title: #323264, //section partners - title color
+
+    title-pub-card: #24A3FF, //section publication - publication title color
+    time-pub-card: #B3B3BA, //section publication - publication time 
+    text-pub-card: #000 //section publication - publication text(description) color
+);

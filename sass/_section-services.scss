@@ -64,12 +64,12 @@ width: 100%;
             margin: 0;
             font-size:  map-get($fonts, 'service-item-title');
             font-weight: 700;
-            color:  #24A3FF;
+            color:  map-get($font-colors, 'service-item-title');
         }
 
         .service-item-description{
             margin: 0;
-            color: #FFFFFF;
+            color: map-get($font-colors, 'service-item-description');
             font-size:  map-get($fonts, 'service-item-description');
             font-weight: 400;
             line-height: 26px; 
@@ -120,7 +120,7 @@ width: 100%;
         
 
         .red {
-            color:  #F0145A;
+            color:  map-get($font-colors, 'title-link-changed');
 
             &::after{
                 background: url(../images/Arrow2.svg);

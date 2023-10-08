@@ -47,14 +47,14 @@ flex-direction: column;
 gap: 15px;
 
     .title-pub-card{
-        color: #24A3FF;
+        color: map-get($font-colors, 'title-pub-card');
         font-size: map-get($fonts, 'title-pub-card');
         font-weight: 700;
         margin: 0;
     }
 
     .time-pub-card{
-        color: #B3B3BA;
+        color: map-get($font-colors, 'time-pub-card');
         font-size: map-get($fonts, 'time-pub-card');
         font-weight: 700;
         letter-spacing: 1px;
@@ -70,8 +70,8 @@ gap: 15px;
 
     .text-pub-card{
         margin: 0;
-        color: #000;
-        font-size: map-get($fonts, 'text-pub-card');;
+        color: map-get($font-colors, 'text-pub-card');
+        font-size: map-get($fonts, 'text-pub-card');
         font-weight: 400;
         line-height: 22px;
     }
