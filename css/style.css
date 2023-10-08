@@ -14,6 +14,18 @@ body {
   gap: 30px;
 }
 
+.some-content p {
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  color: gray;
+}
+
+footer {
+  background-color: #F5F5FA;
+}
+
 .services {
   position: relative;
   padding-bottom: 60px;

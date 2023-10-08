@@ -13,3 +13,19 @@ body{
     flex-direction: column;
     gap: 30px;
 }
+
+// Some content - next home task
+
+.some-content{
+    p{
+        margin: 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+        color: gray;
+    }
+}
+
+footer{
+    background-color: #F5F5FA;
+}
