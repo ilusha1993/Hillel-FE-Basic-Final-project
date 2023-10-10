@@ -117,15 +117,6 @@ width: 100%;
         width: 1600px;
         margin-left: auto;
         margin-right: auto;
-        
-
-        .red {
-            color:  map-get($font-colors, 'title-link-changed');
-
-            &::after{
-                background: url(../images/Arrow2.svg);
-            }
-        }
     }   
 }
 

@@ -1,0 +1,117 @@
+.experience-menu{
+    display: flex;
+    overflow-x: auto;
+    flex-shrink: 0;
+
+    .experience-menu-container{
+        display: flex;
+        gap: 30px;
+        padding-right: 30px;
+        flex-shrink: 0;
+
+        a{
+            text-decoration: none;
+            color: #B3B3BA;
+            flex-shrink: 0;
+            font-size: 30px;
+            font-weight: 700;
+
+            &:hover{
+                color: #F0145A;
+            }
+        }
+
+        .experience-active{
+            background: var(--gradient-text-red-reversed, linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.experience-bloc{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .separated-line{
+        height: 4px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.30);
+        flex-shrink: 0;
+        display: inline-block;
+    }
+}
+
+.experience-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .experience-title{
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .experience-description{
+        p{
+            margin: 0;
+            color: #FFF;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+}
+
+@media(min-width: 768px){
+    .experience-menu{
+        .experience-menu-container{
+            a{
+                font-size: 38px;
+            }
+        }
+    }
+
+    .experience-bloc{
+        gap: 60px;
+
+        .experience-title{
+            font-size: 30px;
+        }
+    }
+}
+
+@media(min-width: 1024px){
+    .experience-bloc{
+        flex-direction: row;
+        
+        .experience-menu{
+            overflow-x: visible;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            .experience-menu-container{
+                flex-direction: column;
+                padding: 0;
+                align-items: flex-end;
+            }
+        }
+
+        .separated-line{
+            width: 4px;
+            height: inherit;
+        }
+    }
+}
+
+@media(min-width: 1920px) {
+    
+.experience{
+    .wrapper{
+        width: 1360px;
+    }   
+}
+}

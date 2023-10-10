@@ -25,6 +25,14 @@
             width: 12px;
             height: 12px;
         }
+
+        &:hover {
+            color:  map-get($font-colors, 'title-link-changed');
+
+            &::after{
+                background: url(../images/Arrow2.svg);
+            }
+        }
     }
 
     .title-text{

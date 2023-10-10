@@ -29,3 +29,10 @@ body{
 footer{
     background-color: #F5F5FA;
 }
+
+@media(min-width: 768px){
+    .homepage{
+        gap: 60px;
+        align-items: center;
+    }
+}
