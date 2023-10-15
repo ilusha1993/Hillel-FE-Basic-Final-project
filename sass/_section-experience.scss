@@ -6,7 +6,6 @@
     .experience-menu-container{
         display: flex;
         gap: 30px;
-        padding-right: 30px;
         flex-shrink: 0;
 
         a{
@@ -87,6 +86,7 @@
 @media(min-width: 1024px){
     .experience-bloc{
         flex-direction: row;
+        align-items: center;
         
         .experience-menu{
             overflow-x: visible;
@@ -102,7 +102,7 @@
 
         .separated-line{
             width: 4px;
-            height: inherit;
+            height: 303px;
         }
     }
 }
