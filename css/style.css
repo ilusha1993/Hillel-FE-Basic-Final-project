@@ -126,6 +126,7 @@ footer {
   display: inline-block;
   border-radius: 24px;
   background: var(--basic-white, #FFF);
+  position: relative;
 }
 .service-item-image img {
   width: 64px;
@@ -548,7 +549,7 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .publications .publications-bloc .publications-menu .publication-card:last-child {
     grid-column: 1/-1;
   }
