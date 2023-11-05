@@ -717,6 +717,8 @@ footer {
 }
 .header .head-desktop nav a:hover {
   color: #F0145A;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #F0145A;
 }
 @media (min-width: 768px) {
   .header .head-desktop .header .head-desktop {
