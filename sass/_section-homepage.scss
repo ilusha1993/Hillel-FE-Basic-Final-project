@@ -30,7 +30,7 @@ $gap: 6px;
         padding-bottom: 0;
         padding-left: 60px;
 
-        .logo{
+        a.logo{
             display: flex;
             flex-direction: column;
             gap: 6px;
@@ -70,11 +70,36 @@ $gap: 6px;
                 font-weight: 700;
                 line-height: normal;
                 text-decoration: none;
+                position: relative;
+
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    border-bottom: 2px solid #FFF;
+                    transform: scaleX(0);
+                    margin-top: 5px;
+                }
 
                 &:hover{
-                    color: #F0145A;
-                    padding-bottom: 5px;
+                    // color: #F0145A;
+
+                    &::after{
+                        transform: scaleX(1);
+                    }
+                }
+            }
+
+            a.current-page-desktop{
+                color: #F0145A;
+
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 100%;
                     border-bottom: 2px solid #F0145A;
+                    transform: scaleX(1);
+                    margin-top: 5px;
                 }
             }
         }
@@ -91,7 +116,7 @@ $gap: 6px;
             align-items: flex-end;
             gap: 15px;
 
-            .logo{
+            a.logo{
                 position: absolute;
                 left: 60px;
                 top: 50px;
@@ -105,7 +130,7 @@ $gap: 6px;
             left: 50%;
             transform: translate(-50%);
 
-            .logo{
+            a.logo{
                 left: 160px;
             }
         }
@@ -288,7 +313,7 @@ $gap: 6px;
         padding-top: 15px;
         padding-bottom: 10px;
 
-        .logo{
+        a.logo{
             display: flex;
             flex-direction: column;
             justify-content: center;

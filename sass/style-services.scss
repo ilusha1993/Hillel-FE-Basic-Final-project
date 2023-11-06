@@ -9,3 +9,17 @@
 @use '../sass/section-homepage';
 @use '../sass/footer';
 
+.header{
+    .head-mobile, .head-desktop{
+        position: relative;
+        margin-bottom: 30px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.partners-bloc h3{
+    margin-top: 80px;
+}
