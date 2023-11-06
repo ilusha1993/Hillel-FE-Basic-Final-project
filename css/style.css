@@ -924,12 +924,10 @@ footer {
   padding: 0;
   border: 0;
   background-color: transparent;
-}
-.logo-menu .menu-burger {
   width: 32px;
   height: 32px;
 }
-.logo-menu .menu-burger .background-menu-mobile {
+.logo-menu .background-menu-mobile {
   position: fixed;
   left: 0;
   top: 0;
@@ -938,7 +936,7 @@ footer {
   background-color: rgba(50, 50, 100, 0.7);
   display: none;
 }
-.logo-menu .menu-burger .background-menu-mobile .menu-mobile {
+.logo-menu .background-menu-mobile .menu-mobile {
   position: absolute;
   bottom: 0;
   left: 8px;
@@ -950,17 +948,17 @@ footer {
   gap: 20px;
   padding: 12px;
 }
-.logo-menu .menu-burger .background-menu-mobile .menu-mobile .close-section {
+.logo-menu .background-menu-mobile .menu-mobile .close-section {
   width: 32px;
   height: 32px;
   align-self: flex-end;
 }
-.logo-menu .menu-burger .background-menu-mobile .menu-mobile nav {
+.logo-menu .background-menu-mobile .menu-mobile nav {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.logo-menu .menu-burger .background-menu-mobile .menu-mobile nav a {
+.logo-menu .background-menu-mobile .menu-mobile nav a {
   color: #24A3FF;
   text-align: center;
   font-size: 24px;
@@ -973,10 +971,10 @@ footer {
   border-radius: 12px;
   background: #F5F5FA;
 }
-.logo-menu .menu-burger .background-menu-mobile .menu-mobile nav a:active {
+.logo-menu .background-menu-mobile .menu-mobile nav a:active {
   background-color: #E6E6F0;
 }
-.logo-menu .menu-burger .background-menu-mobile .menu-mobile nav .current-page {
+.logo-menu .background-menu-mobile .menu-mobile nav .current-page {
   color: #F0145A;
 }
 

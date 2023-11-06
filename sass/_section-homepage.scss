@@ -314,65 +314,63 @@ $gap: 6px;
         padding: 0;
         border: 0;
         background-color: transparent;
-    }
-
-    .menu-burger {
         width: 32px;
         height: 32px;
+    }
 
-        .background-menu-mobile{
-            position: fixed;
-            left: 0;
-            top: 0;
+    
+    .background-menu-mobile{
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgb(50, 50, 100, 0.7);
+        display: none;
+
+        .menu-mobile{
+            position: absolute;
             bottom: 0;
-            right: 0;
-            background-color: rgb(50, 50, 100, 0.7);
-            display: none;
+            left: 8px;
+            right: 8px;
+            background-color: #FFF;
+            border-radius: 12px 12px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 12px;
 
-            .menu-mobile{
-                position: absolute;
-                bottom: 0;
-                left: 8px;
-                right: 8px;
-                background-color: #FFF;
-                border-radius: 12px 12px 0px 0px;
+            .close-section{
+                width: 32px;
+                height: 32px;
+                align-self: flex-end;
+            }
+
+            nav{
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
-                padding: 12px;
+                gap: 15px;
 
-                .close-section{
-                    width: 32px;
-                    height: 32px;
-                    align-self: flex-end;
+                a{
+                    color: #24A3FF;
+                    text-align: center;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-decoration: none;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                    border-radius: 12px;
+                    background: #F5F5FA;
+
+                    &:active{
+                        background-color: #E6E6F0;
+                    }
                 }
 
-                nav{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
-
-                    a{
-                        color: #24A3FF;
-                        text-align: center;
-                        font-size: 24px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: normal;
-                        text-decoration: none;
-                        padding-top: 7px;
-                        padding-bottom: 7px;
-                        border-radius: 12px;
-                        background: #F5F5FA;
-
-                        &:active{
-                            background-color: #E6E6F0;
-                        }
-                    }
-
-                    .current-page{
-                        color: #F0145A;
-                    }
+                .current-page{
+                    color: #F0145A;
                 }
             }
         }
