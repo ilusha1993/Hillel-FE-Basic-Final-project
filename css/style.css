@@ -833,11 +833,11 @@ footer {
   padding: 0;
   margin: 0;
 }
-.logo-section .scroll {
+.logo-section a.scroll {
   position: absolute;
   bottom: 30px;
 }
-.logo-section .scroll:hover svg path, .logo-section .scroll:hover svg circle {
+.logo-section a.scroll:hover svg path, .logo-section a.scroll:hover svg circle {
   stroke: #F0145A;
 }
 @media (min-width: 768px) {
