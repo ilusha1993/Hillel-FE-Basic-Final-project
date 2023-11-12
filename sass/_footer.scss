@@ -58,6 +58,13 @@ $gapF: 10px;
                 gap: 10px;
                 align-items: center;
 
+                .footer-fb {
+                    &:hover svg path{
+                        fill: #F0145A;
+                    }
+                }
+
+
                 a.footer-tel{
                     color:  #46466E;
                     text-align: right;
@@ -70,12 +77,16 @@ $gapF: 10px;
                 }
 
                 a.footer-email{
-                    color: var(--active-regular, #24A3FF);
+                    color: #24A3FF;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
                     text-decoration: none;
+
+                    &:hover{
+                        color: #F0145A;
+                    }
                 }
             }
         }

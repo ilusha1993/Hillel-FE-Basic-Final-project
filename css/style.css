@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", Arial, sans-serif;
 }
@@ -815,6 +819,7 @@ footer {
   display: flex;
   justify-content: center;
   position: relative;
+  height: 100vh;
 }
 .logo-section img {
   width: 524px;
@@ -1058,6 +1063,9 @@ footer {
   gap: 10px;
   align-items: center;
 }
+.footer-section .footer-content .content-first-p .footer-contacts .footer-fb:hover svg path {
+  fill: #F0145A;
+}
 .footer-section .footer-content .content-first-p .footer-contacts a.footer-tel {
   color: #46466E;
   text-align: right;
@@ -1069,12 +1077,15 @@ footer {
   white-space: nowrap;
 }
 .footer-section .footer-content .content-first-p .footer-contacts a.footer-email {
-  color: var(--active-regular, #24A3FF);
+  color: #24A3FF;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
+}
+.footer-section .footer-content .content-first-p .footer-contacts a.footer-email:hover {
+  color: #F0145A;
 }
 .footer-section .footer-content .content-second-p p {
   color: #B3B3BA;
