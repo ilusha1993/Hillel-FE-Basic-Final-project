@@ -198,9 +198,11 @@ $gap: 6px;
     height: 100vh;
 
     img{
-        width: 524px;
-        height: 600px;
-        flex-shrink: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100vh;
     }
 
     p{
@@ -229,30 +231,6 @@ $gap: 6px;
     @media (min-width: 768px){
         p{
             width: 800px;
-        }
-    }
-
-    @media (min-width: 768px) and (max-width: 1024px){
-        img{
-            width: 893.277px;
-            height: 1024px;
-            flex-shrink: 0;
-        }
-    }
-
-    @media (min-width: 1024px) and (max-width: 1920px){
-        img{
-            width: 669.957px;
-            height: 768px;
-            flex-shrink: 0;
-        }
-    }
-
-    @media (min-width: 1920px){
-        img{
-            width: 872.34px;
-            height: 1000px;
-            flex-shrink: 0;
         }
     }
 }
