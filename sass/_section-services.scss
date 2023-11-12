@@ -52,6 +52,7 @@ display: flex;
 flex-direction: column;
 row-gap: 30px;
 width: 100%;
+text-decoration: none;
 
     @include mixins.iconService;
 
